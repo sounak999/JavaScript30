@@ -2,7 +2,6 @@ const keys = document.querySelector('.keys');
 
 document.addEventListener('keydown', (event)=> {    
     const dataVal = event.keyCode;
-    console.log(dataVal);
 
     const key = keys.querySelector(`div[data-key='${dataVal}']`);
     if (key !== null) {
