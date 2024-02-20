@@ -21,5 +21,7 @@ document.addEventListener('keyup', (e) => {
     const dataVal = event.keyCode;
 
     const key = keys.querySelector(`div[data-key='${dataVal}']`);
-    key.classList.remove('playing');
+    if (key !== null) {
+        key.classList.remove('playing');
+    }
 })
